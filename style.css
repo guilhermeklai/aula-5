@@ -1,0 +1,93 @@
+Body{
+    margin:0;
+    background-color: #FFE000;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: purple;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;    
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFE000;
+    font-size: 20px;
+}
+
+aside img{
+    display: flex;
+    padding: 25px;
+    width: auto;
+    height: 50%;
+}
+#RPG{
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFE000;
+}
+section div{
+    margin: 25px;
+    padding-top: 50px;
+    border: solid 2px purple;
+    height: 50%;
+}
+section{
+    padding: 25px;
+    display: flex;
+    font-size: 1.2vw;
+    background-color: white;
+    grid-area: section;
+}
+
+section p{
+    padding: 10px 30px 10px 30px;
+    font-size: 2em;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+.grid{
+    display: grid;
+    grid-auto-columns: 4.3vw 45vw 45vw 5vw;
+    grid-auto-rows: 25vh 50vh 50vh;
+    grid-template-areas:
+    "header header header header"
+    ". aside section ."
+    ". aside section .";
+}
+
+aside{
+    padding-top: 50px;
+    width: 50vw;
+    background-color: white;
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header{
+    grid-area: header;
+    background-color:goldenrod;
+}
+
+header p{
+    font-size: 200px;
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
